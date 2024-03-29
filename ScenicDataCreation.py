@@ -20,7 +20,7 @@ with open(captions_filename, 'a') as file:
         captions = description.text.split(';')
         for caption in captions:
             if len(caption) > 1:
-                line = fname[:-4] + '.jpg' + ',' + caption.strip() + '\n'
+                line = fname[:-4] + '.jpg' + ';' + caption.strip() + '\n'
                 file.write(line)
 print("**** Completed the captions generation ****") 
     
